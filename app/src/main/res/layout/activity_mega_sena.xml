@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="auto"
+    tools:context=".MegaSenaActivity">
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/txtSena2"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/megasena"
+            android:text="Mega-sena"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtResultado11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado17"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado12"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado10"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado5" />
+
+        <TextView
+            android:id="@+id/txtResultado17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado23"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado18"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado16"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado11" />
+
+        <TextView
+            android:id="@+id/txtResultado47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado53"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado48"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado46"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado41" />
+
+        <TextView
+            android:id="@+id/txtResultado29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado35"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado30"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado28"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado23" />
+
+        <TextView
+            android:id="@+id/txtResultado23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado29"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado24"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado22"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado17" />
+
+        <TextView
+            android:id="@+id/txtResultado35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado41"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado36"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado34"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado29" />
+
+        <TextView
+            android:id="@+id/txtResultado41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado47"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado42"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado40"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado35" />
+
+        <TextView
+            android:id="@+id/txtResultado28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado34"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado29"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado27"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado22" />
+
+        <TextView
+            android:id="@+id/txtResultado22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado28"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado23"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado21"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado16" />
+
+        <TextView
+            android:id="@+id/txtResultado46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado52"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado47"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado45"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado40" />
+
+        <TextView
+            android:id="@+id/txtResultado34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado40"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado35"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado33"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado28" />
+
+        <TextView
+            android:id="@+id/txtResultado40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado46"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado41"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado39"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado34" />
+
+        <TextView
+            android:id="@+id/txtResultado16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado22"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado17"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado15"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado10" />
+
+        <TextView
+            android:id="@+id/txtResultado10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado16"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado11"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado9"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado4" />
+
+        <TextView
+            android:id="@+id/txtResultado8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado14"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado9"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado7"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado2" />
+
+        <TextView
+            android:id="@+id/txtResultado32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado38"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado33"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado31"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado26" />
+
+        <TextView
+            android:id="@+id/txtResultado38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado44"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado39"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado37"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado32" />
+
+        <TextView
+            android:id="@+id/txtResultado20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado26"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado21"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado19"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado14" />
+
+        <TextView
+            android:id="@+id/txtResultado50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado51"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado49"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado44" />
+
+        <TextView
+            android:id="@+id/txtResultado26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado32"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado27"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado25"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado20" />
+
+        <TextView
+            android:id="@+id/txtResultado44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado50"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado45"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado43"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado38" />
+
+        <TextView
+            android:id="@+id/txtResultado14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado20"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado15"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado13"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado8" />
+
+        <TextView
+            android:id="@+id/txtResultado42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado48"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado41"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado36" />
+
+        <TextView
+            android:id="@+id/txtResultado48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado54"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado47"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado42" />
+
+        <TextView
+            android:id="@+id/txtResultado24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado23"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado18" />
+
+        <TextView
+            android:id="@+id/txtResultado30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado36"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado29"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado24" />
+
+        <TextView
+            android:id="@+id/txtResultado36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado42"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado35"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado30" />
+
+        <TextView
+            android:id="@+id/txtResultado12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado11"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado6" />
+
+        <TextView
+            android:id="@+id/txtResultado18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado17"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado12" />
+
+        <TextView
+            android:id="@+id/txtResultado33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado39"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado34"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado32"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado27" />
+
+        <TextView
+            android:id="@+id/txtResultado21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado27"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado22"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado20"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado15" />
+
+        <TextView
+            android:id="@+id/txtResultado45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado51"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado46"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado44"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado39" />
+
+        <TextView
+            android:id="@+id/txtResultado15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado21"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado16"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado14"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado9" />
+
+        <TextView
+            android:id="@+id/txtResultado27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado33"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado28"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado26"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado21" />
+
+        <TextView
+            android:id="@+id/txtResultado9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado15"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado10"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado8"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado3" />
+
+        <TextView
+            android:id="@+id/txtResultado39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado45"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado40"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado38"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado33" />
+
+        <TextView
+            android:id="@+id/txtResultado1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado7"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao" />
+
+        <TextView
+            android:id="@+id/txtResultado2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado8"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado1"
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao" />
+
+        <TextView
+            android:id="@+id/txtResultado3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado9"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado2"
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao" />
+
+        <TextView
+            android:id="@+id/txtResultado4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado10"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado3"
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao" />
+
+        <TextView
+            android:id="@+id/txtResultado5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado11"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado4"
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao" />
+
+        <TextView
+            android:id="@+id/txtResultado6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado5"
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao" />
+
+        <TextView
+            android:id="@+id/txtOpcao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:textColor="@color/ColorText"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnTeste" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:tag="www.uol.com.br"
+            android:text="Boa Sorte!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtResultado19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado25"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado20"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado13" />
+
+        <TextView
+            android:id="@+id/txtResultado49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado50"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado43" />
+
+        <TextView
+            android:id="@+id/txtResultado43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado49"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado44"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado37" />
+
+        <TextView
+            android:id="@+id/txtResultado31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado37"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado32"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado25" />
+
+        <TextView
+            android:id="@+id/txtResultado13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado19"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado14"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado7" />
+
+        <TextView
+            android:id="@+id/txtResultado25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado31"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado26"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado19" />
+
+        <TextView
+            android:id="@+id/txtResultado7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado_mega"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado13"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado1" />
+
+        <TextView
+            android:id="@+id/txtResultado37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtResultado43"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado38"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado31" />
+
+        <TextView
+            android:id="@+id/txtResultado54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado53"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado48" />
+
+        <TextView
+            android:id="@+id/txtResultado51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado52"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado50"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado45" />
+
+        <TextView
+            android:id="@+id/txtResultado52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado53"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado51"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado46" />
+
+        <TextView
+            android:id="@+id/txtResultado53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao__customizado"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toStartOf="@+id/txtResultado54"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtResultado52"
+            app:layout_constraintTop_toBottomOf="@+id/txtResultado47" />
+
+        <Button
+            android:id="@+id/btnTeste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="megaSena2"
+            android:text="Gerar Numeros"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qtdNumText" />
+
+        <EditText
+            android:id="@+id/qtdNumText"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:onClick="limparQnt"
+            android:text="06"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Quantidade de numeros da aposta?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSena2" />
+
+        <TextView
+            android:id="@+id/megaVoltar"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/VerdeMega"
+            android:text=" ❮"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtSena2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

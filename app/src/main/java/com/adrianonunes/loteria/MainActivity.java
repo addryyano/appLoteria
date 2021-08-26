@@ -1,19 +1,37 @@
 package com.adrianonunes.loteria;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Random;
 
-public class MainActivity<txtOpcao> extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
+
+    private Button btnMegaSena;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btnMegaSena = findViewById(R.id.btnMegaSena);
+
+        btnMegaSena.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent intent = new Intent(MainActivity.this, MegaSenaActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MegaSenaActivity.class);
+                startActivity(intent);
+                //finish();
+            }
+        });
     }
 
     private boolean flag;
@@ -21,6 +39,16 @@ public class MainActivity<txtOpcao> extends AppCompatActivity {
     private int sorteio;
     private TextView[] texto =  new TextView[50];
     private boolean gravado = false;
+
+    public void limpar(int nLimpar){
+        if (gravado) {
+            for (int i = 0; i < nLimpar; i++) {
+                System.out.println(vetLoteria[i]);
+                texto[i].setText("");
+                //texto[49].setText("");
+            }
+        }
+    }
 
     public void geraNumeros(int nSorteado, int nTotal) {
         for (int i = 0; i < nSorteado; i++) {
@@ -109,18 +137,7 @@ public class MainActivity<txtOpcao> extends AppCompatActivity {
         texto[49] = findViewById(R.id.txtResultado50);
 
         TextView txtOpcao = findViewById(R.id.txtOpcao);
-        if (nSorteados2 == 6) {
-            txtOpcao.setText("APOSTA: Mega-Sena");
-        }
-        else if (nSorteados2 == 50) {
-            txtOpcao.setText("APOSTA: Lotomania");
-        }
-        else if (nSorteados2 == 15) {
-            txtOpcao.setText("APOSTA: Lotofacil");
-        }
-        else {
-            txtOpcao.setText("APOSTA: Quina");
-        }
+        txtOpcao.setText("Números da Sorte!");
 
         for (int i = 0; i < nSorteados2; i++) {
             System.out.println(vetLoteria[i]);
@@ -137,11 +154,22 @@ public class MainActivity<txtOpcao> extends AppCompatActivity {
         gravado = true;
     }
 
-    public void limpar(int nLimpar){
-        for (int i = 0; i < nLimpar; i++) {
-            System.out.println(vetLoteria[i]);
-            texto[i].setText("");
-            texto[49].setText("");
+
+
+    public void alert(int minAposta, int maxAposta, int qntInt) {
+        if (qntInt < minAposta || qntInt > maxAposta) {
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.setTitle("ERRO!");
+            alert.setMessage("Informe um valor entre " + minAposta + " e " + maxAposta);
+            alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                }
+            });
+            alert.create();
+            alert.show();
+
         }
     }
 
