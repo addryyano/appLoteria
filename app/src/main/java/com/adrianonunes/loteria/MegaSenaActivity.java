@@ -28,7 +28,7 @@ import android.widget.TextView;
             public void onClick(View v) {
                 Intent intent = new Intent(MegaSenaActivity.this, MainActivity.class);
                 startActivity(intent);
-                //finish();
+                finish();
             }
         });
     }
