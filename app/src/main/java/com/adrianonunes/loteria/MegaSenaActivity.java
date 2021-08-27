@@ -15,15 +15,16 @@ import android.widget.TextView;
     public class MegaSenaActivity extends MainActivity {
 
     private EditText qntText;
-    private TextView textView;
+    private Button buttonmegaTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mega_sena);
         qntText = findViewById(R.id.qtdNumText);
-        textView = findViewById(R.id.megaVoltar);
-        textView.setOnClickListener(new View.OnClickListener() {
+
+        buttonmegaTitle = findViewById(R.id.megaTitle);
+        buttonmegaTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MegaSenaActivity.this, MainActivity.class);
@@ -33,13 +34,12 @@ import android.widget.TextView;
         });
     }
 
-    public void megaSena2(View view) {
+    public void megaSena(View view) {
         String qntString = qntText.getText().toString();
 
         Integer qntInt = Integer.parseInt(qntString);
         int minAposta = 6;
         int maxAposta = 15;
-
 
         alert(minAposta, maxAposta, qntInt);
 
@@ -51,13 +51,10 @@ import android.widget.TextView;
             ordenar(qntInt);
 
             gravarExibirNumeros(qntInt);
-
         }
-
-
     }
+
     public void limparQnt(View view) {
-     qntText.setText("");
+        qntText.setText("");
     }
-
 }

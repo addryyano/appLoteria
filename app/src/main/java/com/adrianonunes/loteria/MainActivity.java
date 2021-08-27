@@ -173,17 +173,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void megaSena(View view) {
-        if (gravado) {
-            limpar(50);
-        }
-
-        geraNumeros(6, 61);
-
-        ordenar(6);
-
-        gravarExibirNumeros(6);
-    }
 
     public void quina(View view) {
         if (gravado) {
