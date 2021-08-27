@@ -6,33 +6,33 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-    public class MegaSenaActivity extends MainActivity {
+    public class QuinaActivity extends MainActivity {
 
     private EditText qntText;
-    private Button buttonmegaTitle;
+    private Button buttonquinaTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mega_sena);
+        setContentView(R.layout.activity_quina);
         qntText = findViewById(R.id.qtdNumText);
 
-        buttonmegaTitle = findViewById(R.id.lotomaniaTitle);
-        buttonmegaTitle.setOnClickListener(new View.OnClickListener() {
+        buttonquinaTitle = findViewById(R.id.quinaTitle);
+        buttonquinaTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MegaSenaActivity.this, MainActivity.class);
+                Intent intent = new Intent(QuinaActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
     }
 
-    public void megaSena(View view) {
+    public void quina(View view) {
         String qntString = qntText.getText().toString();
 
         Integer qntInt = Integer.parseInt(qntString);
-        int minAposta = 6;
+        int minAposta = 5;
         int maxAposta = 15;
 
         alert(minAposta, maxAposta, qntInt);
@@ -40,7 +40,7 @@ import android.widget.EditText;
         if (!(qntInt < minAposta || qntInt > maxAposta)) {
             limpar(50);
 
-            geraNumeros(qntInt, 61);
+            geraNumeros(qntInt, 81);
 
             ordenar(qntInt);
 

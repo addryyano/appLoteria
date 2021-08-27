@@ -636,7 +636,7 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/btnTeste" />
+            app:layout_constraintTop_toTopOf="@+id/btnGerarNumeros" />
 
         <TextView
             android:id="@+id/textView9"
@@ -824,7 +824,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txtResultado47" />
 
         <Button
-            android:id="@+id/btnTeste"
+            android:id="@+id/btnGerarNumeros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="megaSena"

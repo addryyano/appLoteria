@@ -9,8 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LotomaniaActivity"></activity>
-        <activity android:name=".MegaSenaActivity"></activity>
+        <activity
+            android:name=".LotomaniaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MegaSenaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".LotofacilActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".QuinaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".DiadesorteActivity"
+            android:screenOrientation="portrait">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">

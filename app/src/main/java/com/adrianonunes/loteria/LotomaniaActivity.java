@@ -40,7 +40,7 @@ import android.widget.EditText;
         if (!(qntInt < minAposta || qntInt > maxAposta)) {
             limpar(50);
 
-            geraNumeros(qntInt, 100);
+            geraNumeros(qntInt, 101);
 
             ordenar(qntInt);
 

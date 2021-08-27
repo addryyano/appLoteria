@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnMegaSena;
     private Button btnLotomania;
+    private Button btnLotofacil;
+    private Button btnQuina;
+    private Button btnDiadesorte;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,37 +27,58 @@ public class MainActivity extends AppCompatActivity {
 
         btnMegaSena = findViewById(R.id.btnMegaSena);
         btnLotomania = findViewById(R.id.btnLotomania);
+        btnLotofacil = findViewById(R.id.btnLotofacil);
+        btnQuina = findViewById(R.id.btnQuina);
+        btnDiadesorte = findViewById(R.id.btnDiadesorte);
 
         btnMegaSena.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(MainActivity.this, MegaSenaActivity.class);
                 Intent intent = new Intent(getApplicationContext(), MegaSenaActivity.class);
                 startActivity(intent);
-                //finish();
             }
         });
-
-
 
         btnLotomania.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(MainActivity.this, MegaSenaActivity.class);
-                Intent intent = new Intent(getApplicationContext(),LotomaniaActivity.class);
+                Intent intent = new Intent(getApplicationContext(), LotomaniaActivity.class);
                 startActivity(intent);
-                //finish();
+            }
+        });
+
+        btnLotofacil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LotofacilActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnQuina.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), QuinaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnDiadesorte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), DiadesorteActivity.class);
+                startActivity(intent);
             }
         });
     }
 
     private boolean flag;
-    private int[] vetLoteria =  new int[50];
+    private int[] vetLoteria = new int[50];
     private int sorteio;
-    private TextView[] texto =  new TextView[50];
+    private TextView[] texto = new TextView[50];
     private boolean gravado = false;
 
-    public void limpar(int nLimpar){
+    public void limpar(int nLimpar) {
         if (gravado) {
             for (int i = 0; i < nLimpar; i++) {
                 System.out.println(vetLoteria[i]);
@@ -73,8 +97,7 @@ public class MainActivity extends AppCompatActivity {
                     if (sorteio == vetLoteria[n]) {
                         flag = true;
                         break;
-                    }
-                    else{
+                    } else {
                         flag = false;
                     }
                 }
@@ -87,9 +110,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ordenar(int nSorteados) {
-        for(int a = 0; a < nSorteados; a++) {
-            for(int b = a + 1; b < nSorteados; b++) {
-                if(vetLoteria[a] > vetLoteria[b]) {
+        for (int a = 0; a < nSorteados; a++) {
+            for (int b = a + 1; b < nSorteados; b++) {
+                if (vetLoteria[a] > vetLoteria[b]) {
                     int auxiliar = vetLoteria[a];
                     vetLoteria[a] = vetLoteria[b];
                     vetLoteria[b] = auxiliar;
@@ -155,19 +178,16 @@ public class MainActivity extends AppCompatActivity {
 
         for (int i = 0; i < nSorteados2; i++) {
             System.out.println(vetLoteria[i]);
-            if(vetLoteria[i] < 10) {
+            if (vetLoteria[i] < 10) {
                 texto[i].setText(" 0" + vetLoteria[i] + " ");
-            }
-            else if(vetLoteria[i] > 99) {
+            } else if (vetLoteria[i] > 99) {
                 texto[i].setText(" 00 ");
-            }
-            else {
+            } else {
                 texto[i].setText(" " + vetLoteria[i] + " ");
             }
         }
         gravado = true;
     }
-
 
 
     public void alert(int minAposta, int maxAposta, int qntInt) {
@@ -186,31 +206,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+}
 
 
-    public void quina(View view) {
-        if (gravado) {
-            limpar(50);
-        }
-
-        geraNumeros(5, 81);
-
-        ordenar(5);
-
-        gravarExibirNumeros(5);
-    }
-
-
-    public void lotoFacil(View view) {
-        if (gravado) {
-            limpar(50);
-        }
-
-        geraNumeros(15, 26);
-
-        ordenar(15);
-
-        gravarExibirNumeros(15);
-    }
- }
 
