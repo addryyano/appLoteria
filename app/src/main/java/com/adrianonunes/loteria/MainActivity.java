@@ -15,6 +15,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnMegaSena;
+    private Button btnLotomania;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +23,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnMegaSena = findViewById(R.id.btnMegaSena);
+        btnLotomania = findViewById(R.id.btnLotomania);
 
         btnMegaSena.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Intent intent = new Intent(MainActivity.this, MegaSenaActivity.class);
                 Intent intent = new Intent(getApplicationContext(), MegaSenaActivity.class);
+                startActivity(intent);
+                //finish();
+            }
+        });
+
+
+
+        btnLotomania.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent intent = new Intent(MainActivity.this, MegaSenaActivity.class);
+                Intent intent = new Intent(getApplicationContext(),LotomaniaActivity.class);
                 startActivity(intent);
                 //finish();
             }
@@ -186,17 +200,6 @@ public class MainActivity extends AppCompatActivity {
         gravarExibirNumeros(5);
     }
 
-    public void lotoMania(View view) {
-        if (gravado) {
-            limpar(50);
-        }
-
-        geraNumeros(50, 101);
-
-        ordenar(50);
-
-        gravarExibirNumeros(50);
-    }
 
     public void lotoFacil(View view) {
         if (gravado) {

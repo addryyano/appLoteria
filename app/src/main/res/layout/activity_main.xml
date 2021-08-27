@@ -37,7 +37,7 @@
             android:textColor="@android:color/background_light"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/btnLoto"
+            app:layout_constraintBottom_toTopOf="@+id/btnLotomania"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -98,14 +98,14 @@
             app:layout_constraintBottom_toTopOf="@+id/btnQuina"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnLoto" />
+            app:layout_constraintTop_toBottomOf="@+id/btnLotomania" />
 
         <Button
-            android:id="@+id/btnLoto"
+            android:id="@+id/btnLotomania"
             android:layout_width="340dp"
             android:layout_height="50dp"
             android:background="@drawable/lotomaniaredondo"
-            android:onClick="lotoMania"
+            android:onClick="lotomania"
             android:text="Lotomania"
             android:textColor="@android:color/background_light"
             android:textSize="20sp"
