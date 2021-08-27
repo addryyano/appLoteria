@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnLotofacil;
     private Button btnQuina;
     private Button btnDiadesorte;
+    private Button btnTimemania;
+    private Button btnDuplasena;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         btnLotofacil = findViewById(R.id.btnLotofacil);
         btnQuina = findViewById(R.id.btnQuina);
         btnDiadesorte = findViewById(R.id.btnDiadesorte);
+        btnTimemania = findViewById(R.id.btnTimeMania);
+        btnDuplasena = findViewById(R.id.btnDuplaSena);
 
         btnMegaSena.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +71,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), DiadesorteActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnTimemania.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), TimemaniaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnDuplasena.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), DuplasenaActivity.class);
                 startActivity(intent);
             }
         });
