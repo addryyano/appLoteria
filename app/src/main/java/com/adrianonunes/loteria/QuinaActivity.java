@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-    public class QuinaActivity extends MainActivity {
+public class QuinaActivity extends MainActivity {
 
     private EditText qntText;
     private Button buttonquinaTitle;

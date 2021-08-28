@@ -92,6 +92,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public TextView[] getTexto() {
+        return texto;
+    }
+
+    public int[] getVetLoteria() {
+        return vetLoteria;
+    }
+
     private boolean flag;
     private int[] vetLoteria = new int[50];
     private int sorteio;
@@ -209,7 +217,6 @@ public class MainActivity extends AppCompatActivity {
         gravado = true;
     }
 
-
     public void alert(int minAposta, int maxAposta, int qntInt) {
         if (qntInt < minAposta || qntInt > maxAposta) {
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
@@ -223,10 +230,8 @@ public class MainActivity extends AppCompatActivity {
             });
             alert.create();
             alert.show();
-
         }
     }
-
 }
 
 

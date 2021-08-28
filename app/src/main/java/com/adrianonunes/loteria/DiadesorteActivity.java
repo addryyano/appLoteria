@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-    public class DiadesorteActivity extends MainActivity {
+public class DiadesorteActivity extends MainActivity {
 
     private EditText qntText;
     private Button buttondiadesorteTitle;

@@ -15,15 +15,22 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="411dp"
+            android:layout_width="0dp"
             android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
             android:background="@color/ColorText"
             android:gravity="center"
-            android:text="Selecione uma opção abaixo!"
+            android:text="ESCOLHA A OPÇÃO DESEJADA!"
             android:textColor="@android:color/background_light"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteY="8dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnMegaSena"
@@ -127,7 +134,7 @@
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
             android:background="@drawable/duplasenaredondo"
-            android:text="Dupla - Sena"
+            android:text="Dupla-Sena"
             android:textColor="@android:color/background_light"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -265,6 +272,20 @@
             android:textSize="24sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteY="779dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/ColorText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

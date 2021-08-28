@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-    public class MegaSenaActivity extends MainActivity {
+public class MegaSenaActivity extends MainActivity {
 
     private EditText qntText;
     private Button buttonmegaTitle;
