@@ -5,17 +5,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
-public class DiadesorteActivity extends MainActivity {
+import java.util.Random;
 
-    private EditText qntText;
-    private Button buttondiadesorteTitle;
+    public class DiadesorteActivity extends MainActivity {
+        private TextView mesSorte;
+        private EditText qntText;
+        private Button buttondiadesorteTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diadesorte);
         qntText = findViewById(R.id.qtdNumText);
+        mesSorte = findViewById(R.id.mesSorte);
 
         buttondiadesorteTitle = findViewById(R.id.diadesorteTitle);
         buttondiadesorteTitle.setOnClickListener(new View.OnClickListener() {
@@ -38,17 +42,42 @@ public class DiadesorteActivity extends MainActivity {
         alert(minAposta, maxAposta, qntInt);
 
         if (!(qntInt < minAposta || qntInt > maxAposta)) {
-            limpar(50);
+            limpar(18);
 
             geraNumeros(qntInt, 32);
 
             ordenar(qntInt);
 
             gravarExibirNumeros(qntInt);
+
+            sorteioMes(view);
         }
     }
 
     public void limparQnt(View view) {
         qntText.setText("");
+    }
+
+    public void sorteioMes(View view){
+        String[] meses = {
+                "Janeiro",
+                "Fevereiro",
+                "Março",
+                "Abril",
+                "Maio",
+                "Junho",
+                "Julho",
+                "Agosto",
+                "Setembro",
+                "Outubro",
+                "Novembro",
+                "Dezembro"
+        };
+
+        int n1 = new Random().nextInt(12);
+
+        TextView txtMes = findViewById(R.id.txtMes);
+        txtMes.setText("   " + meses[n1] + "   ");
+        mesSorte.setText("Mês da Sorte:");
     }
 }

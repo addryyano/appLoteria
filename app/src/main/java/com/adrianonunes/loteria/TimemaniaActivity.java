@@ -147,7 +147,7 @@ public class TimemaniaActivity extends MainActivity {
         int n1 = new Random().nextInt(80);
 
         TextView txtTime = findViewById(R.id.txtTime);
-        txtTime.setText("  " + times[n1] + "  ");
+        txtTime.setText("   " + times[n1] + "   ");
         timeSorte.setText("Time da Sorte:");
     }
 }

@@ -25,7 +25,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:background="@drawable/duplasena"
-            android:text="duplasena"
+            android:text="dupla sena"
             android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -60,90 +60,6 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/txtResultado16"
             app:layout_constraintTop_toBottomOf="@+id/txtResultado11" />
-
-        <TextView
-            android:id="@+id/txtResultado29"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado30"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado28"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado23" />
-
-        <TextView
-            android:id="@+id/txtResultado23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado24"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado22"
-            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
-
-        <TextView
-            android:id="@+id/txtResultado35"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado36"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado34"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado29" />
-
-        <TextView
-            android:id="@+id/txtResultado28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado29"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado27"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado22" />
-
-        <TextView
-            android:id="@+id/txtResultado22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado23"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado21"
-            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
-
-        <TextView
-            android:id="@+id/txtResultado34"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado35"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado33"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado28" />
 
         <TextView
             android:id="@+id/txtResultado16"
@@ -188,48 +104,6 @@
             app:layout_constraintTop_toBottomOf="@+id/txtResultado2" />
 
         <TextView
-            android:id="@+id/txtResultado32"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado33"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado31"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado26" />
-
-        <TextView
-            android:id="@+id/txtResultado20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado21"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado19"
-            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
-
-        <TextView
-            android:id="@+id/txtResultado26"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado27"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado25"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado20" />
-
-        <TextView
             android:id="@+id/txtResultado14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -242,48 +116,6 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/txtResultado13"
             app:layout_constraintTop_toBottomOf="@+id/txtResultado8" />
-
-        <TextView
-            android:id="@+id/txtResultado24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado23"
-            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
-
-        <TextView
-            android:id="@+id/txtResultado30"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado29"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado24" />
-
-        <TextView
-            android:id="@+id/txtResultado36"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado35"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado30" />
 
         <TextView
             android:id="@+id/txtResultado12"
@@ -314,34 +146,6 @@
             app:layout_constraintTop_toBottomOf="@+id/txtResultado12" />
 
         <TextView
-            android:id="@+id/txtResultado33"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado34"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado32"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado27" />
-
-        <TextView
-            android:id="@+id/txtResultado21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado22"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado20"
-            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
-
-        <TextView
             android:id="@+id/txtResultado15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -354,20 +158,6 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/txtResultado14"
             app:layout_constraintTop_toBottomOf="@+id/txtResultado9" />
-
-        <TextView
-            android:id="@+id/txtResultado27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado28"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/txtResultado26"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado21" />
 
         <TextView
             android:id="@+id/txtResultado9"
@@ -496,34 +286,6 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/txtResultado19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado20"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
-
-        <TextView
-            android:id="@+id/txtResultado31"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado32"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado25" />
-
-        <TextView
             android:id="@+id/txtResultado13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -536,20 +298,6 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtResultado7" />
-
-        <TextView
-            android:id="@+id/txtResultado25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/botao__customizadoduplasena"
-            android:textColor="@android:color/background_light"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtResultado26"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtResultado19" />
 
         <TextView
             android:id="@+id/txtResultado7"
@@ -605,17 +353,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/duplasenaTitle" />
-
-        <TextView
-            android:id="@+id/txtOpcao2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
-            android:textColor="@color/ColorText"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtOpcao" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
