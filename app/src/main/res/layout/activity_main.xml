@@ -17,11 +17,11 @@
             android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
             android:layout_marginTop="1dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginRight="4dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
             android:background="@color/ColorText"
             android:gravity="center"
             android:text="ESCOLHA A OPÇÃO DESEJADA!"
@@ -34,7 +34,7 @@
 
         <Button
             android:id="@+id/btnMegaSena"
-            android:layout_width="0dp"
+            android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -48,11 +48,11 @@
             app:layout_constraintBottom_toTopOf="@+id/btnLotomania"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/btnMaisMilionaria" />
 
         <Button
             android:id="@+id/btnQuina"
-            android:layout_width="0dp"
+            android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -71,7 +71,7 @@
 
         <Button
             android:id="@+id/btnTimeMania"
-            android:layout_width="0dp"
+            android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -82,14 +82,14 @@
             android:textColor="@android:color/background_light"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnDuplaSena" />
 
         <Button
             android:id="@+id/btnLotofacil"
-            android:layout_width="0dp"
+            android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -108,7 +108,7 @@
 
         <Button
             android:id="@+id/btnLotomania"
-            android:layout_width="0dp"
+            android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -127,7 +127,7 @@
 
         <Button
             android:id="@+id/btnDuplaSena"
-            android:layout_width="0dp"
+            android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -145,7 +145,7 @@
 
         <Button
             android:id="@+id/btnDiadesorte"
-            android:layout_width="0dp"
+            android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
@@ -277,15 +277,33 @@
             android:id="@+id/textView2"
             android:layout_width="0dp"
             android:layout_height="8dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginRight="4dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
             android:layout_marginBottom="1dp"
             android:background="@color/ColorText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnMaisMilionaria"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/maismilionariaredondo"
+            android:text="+ Milionaria"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnMegaSena"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

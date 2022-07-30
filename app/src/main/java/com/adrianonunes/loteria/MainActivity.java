@@ -14,6 +14,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button btnMaisMilionaria;
     private Button btnMegaSena;
     private Button btnLotomania;
     private Button btnLotofacil;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnMaisMilionaria = findViewById(R.id.btnMaisMilionaria);
         btnMegaSena = findViewById(R.id.btnMegaSena);
         btnLotomania = findViewById(R.id.btnLotomania);
         btnLotofacil = findViewById(R.id.btnLotofacil);
