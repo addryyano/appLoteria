@@ -242,6 +242,27 @@ public class MainActivity extends AppCompatActivity {
             alert.show();
         }
     }
+
+
+//novo codigo
+    public void gravarExibirTrevos(int nSorteados2) {
+        texto[0] = findViewById(R.id.txtTrevo1);
+        texto[1] = findViewById(R.id.txtTrevo2);
+        texto[2] = findViewById(R.id.txtTrevo3);
+        texto[3] = findViewById(R.id.txtTrevo4);
+        texto[4] = findViewById(R.id.txtTrevo5);
+        texto[5] = findViewById(R.id.txtTrevo6);
+
+        TextView txtOpcao = findViewById(R.id.txtOpcao2);
+        txtOpcao.setText("Trevos da Sorte!");
+
+        for (int i = 0; i < nSorteados2; i++) {
+            System.out.println(vetLoteria[i]);
+            texto[i].setText(" 0" + vetLoteria[i] + " ");
+        }
+        gravado = true;
+    }
+    //até aqui
 }
 
 

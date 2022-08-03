@@ -238,6 +238,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
+        <EditText
+            android:id="@+id/qtdNumText2"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="308dp"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:onClick="limparQnt"
+            android:selectAllOnFocus="true"
+            android:text="02"
+            android:textColorHighlight="@android:color/holo_blue_bright"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
@@ -282,10 +300,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/txtOpcao2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="128dp"
+            android:layout_marginTop="200dp"
             android:textColor="@color/ColorText"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -299,13 +317,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/botao__customizadotrevo"
+            android:text=" 02 "
             android:textColor="@android:color/background_light"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/txtTrevo2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
 
         <TextView
             android:id="@+id/txtTrevo2"
@@ -313,13 +332,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/botao__customizadotrevo"
+            android:text=" 03 "
             android:textColor="@android:color/background_light"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/txtTrevo3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/txtTrevo1"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
 
         <TextView
             android:id="@+id/txtTrevo3"
@@ -328,12 +348,12 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/botao__customizadotrevo"
             android:textColor="@android:color/background_light"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/txtTrevo4"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/txtTrevo2"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
 
         <TextView
             android:id="@+id/txtTrevo4"
@@ -342,12 +362,12 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/botao__customizadotrevo"
             android:textColor="@android:color/background_light"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/txtTrevo5"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/txtTrevo3"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
 
         <TextView
             android:id="@+id/txtTrevo5"
@@ -356,12 +376,12 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/botao__customizadotrevo"
             android:textColor="@android:color/background_light"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/txtTrevo6"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/txtTrevo4"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
 
         <TextView
             android:id="@+id/txtTrevo6"
@@ -370,12 +390,23 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/botao__customizadotrevo"
             android:textColor="@android:color/background_light"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/txtTrevo5"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao2" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="Quantidade de trevos da aposta?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtOpcao" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
