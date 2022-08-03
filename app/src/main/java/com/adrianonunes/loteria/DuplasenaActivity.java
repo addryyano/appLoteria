@@ -29,8 +29,8 @@ public class DuplasenaActivity extends MainActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DuplasenaActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
-                finish();
             }
         });
     }

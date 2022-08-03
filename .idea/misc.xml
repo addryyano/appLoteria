@@ -3,13 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/drawable-v24/botao__customizadotrevo.xml" value="0.179" />
         <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/drawable/botao__customizadomaismilionaria.xml" value="0.123" />
+        <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/drawable/botao__customizadotrevo.xml" value="0.169" />
+        <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_diadesorte.xml" value="0.21" />
         <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_duplasena.xml" value="0.21" />
+        <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_lotofacil.xml" value="0.25" />
+        <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_lotomania.xml" value="0.21" />
         <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_maismilionaria.xml" value="0.25" />
+        <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_maismilionaria.xml" value="0.33" />
         <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_mega_sena.xml" value="0.33" />
         <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_quina.xml" value="0.33" />
-        <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_timemania.xml" value="0.11452702702702702" />
+        <entry key="..\:/Users/Adriano/AndroidStudioProjects/Loteria/app/src/main/res/layout/activity_timemania.xml" value="0.21" />
       </map>
     </option>
   </component>

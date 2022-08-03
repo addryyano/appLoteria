@@ -17,7 +17,7 @@ public class MegaSenaActivity extends MainActivity {
         setContentView(R.layout.activity_mega_sena);
         qntText = findViewById(R.id.qtdNumText);
 
-        buttonmegaTitle = findViewById(R.id.lotomaniaTitle);
+        buttonmegaTitle = findViewById(R.id.megaTitle);
         buttonmegaTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

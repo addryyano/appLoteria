@@ -26,8 +26,8 @@ import java.util.Random;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DiadesorteActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
-                finish();
             }
         });
     }

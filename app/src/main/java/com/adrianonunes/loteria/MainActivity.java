@@ -92,6 +92,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnMaisMilionaria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MaisMilionariaActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public TextView[] getTexto() {

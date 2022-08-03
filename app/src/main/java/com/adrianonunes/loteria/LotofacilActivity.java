@@ -22,8 +22,8 @@ public class LotofacilActivity extends MainActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LotofacilActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
-                finish();
             }
         });
     }
@@ -38,7 +38,7 @@ public class LotofacilActivity extends MainActivity {
         alert(minAposta, maxAposta, qntInt);
 
         if (!(qntInt < minAposta || qntInt > maxAposta)) {
-            limpar(50);
+            limpar(18);
 
             geraNumeros(qntInt, 26);
 

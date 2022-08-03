@@ -18,6 +18,10 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
+            android:name=".MaisMilionariaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
             android:name=".DuplasenaActivity"
             android:screenOrientation="portrait">
         </activity>

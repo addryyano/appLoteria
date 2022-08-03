@@ -17,13 +17,13 @@ public class LotomaniaActivity extends MainActivity {
         setContentView(R.layout.activity_lotomania);
         qntText = findViewById(R.id.qtdNumText);
 
-        buttonlotomaniaTitle = findViewById(R.id.lotomaniaTitle);
+        buttonlotomaniaTitle = findViewById(R.id.megaTitle);
         buttonlotomaniaTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LotomaniaActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
-                finish();
             }
         });
     }
