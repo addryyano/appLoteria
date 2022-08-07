@@ -25,6 +25,13 @@ public class MaisMilionariaActivity extends MainActivity {
             return textoTrevo;
         }
     private int[] getVetTrevo() {return vetTrevo;}
+    private int minApost = 6;
+    private int maxApost = 12;
+    private int minTrev = 2;
+    private int maxTrev = 6;
+    private Integer qntIn = 0;
+    private Integer qntIn2 = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,41 +53,45 @@ public class MaisMilionariaActivity extends MainActivity {
 
     public void maisMilionaria(View view) {
         String qntString = qntText.getText().toString();
-        String qntString2 = qntText2.getText().toString();
-
-        Integer qntInt = Integer.parseInt(qntString);
-        Integer qntInt2 = Integer.parseInt(qntString2);
-
-        int minAposta = 6;
-        int maxAposta = 12;
-        alert(minAposta, maxAposta, qntInt);
-
-        int minTrevo = 2;
-        int maxTrevo = 6;
-        alertT(minTrevo, maxTrevo, qntInt2);
-
-        if (!(qntInt < minAposta || qntInt > maxAposta)) {
-            limpar(12);
-
-            geraNumeros(qntInt, 51);
-
-            ordenar(qntInt);
-
-            gravarExibirNumeros(qntInt);
+        if (qntText.getText().toString().equals("")) {
+            emBranco(view);
+            return;
         }
 
-        if (!(qntInt2 < minTrevo || qntInt2 > maxTrevo)) {
+        String qntString2 = qntText2.getText().toString();
+        if (qntText2.getText().toString().equals("")) {
+            emBranco(view);
+            return;
+        }
+
+        qntIn = Integer.parseInt(qntString);
+        qntIn2 = Integer.parseInt(qntString2);
+
+        alert(minApost, maxApost, qntIn);
+
+        alertT(minTrev, maxTrev, qntIn2);
+
+        if (!(qntIn < minApost || qntIn > maxApost)) {
+            limpar(12);
+
+            geraNumeros(qntIn, 51);
+
+            ordenar(qntIn);
+
+            gravarExibirNumeros(qntIn);
+        }
+
+        if (!(qntIn2 < minTrev || qntIn2 > maxTrev)) {
             limparT(6);
 
-            geraNumerosT(qntInt2, 7);
+            geraNumerosT(qntIn2, 7);
 
-            ordenarT(qntInt2);
+            ordenarT(qntIn2);
 
-            gravarExibirTrevos(qntInt2);
+            gravarExibirTrevos(qntIn2);
         }
 
     }
-
 
     public void limparT(int tLimpar) {
         if (gravadoTrevo) {
@@ -137,7 +148,7 @@ public class MaisMilionariaActivity extends MainActivity {
 
         for (int i = 0; i < nSorteadosT; i++) {
             System.out.println(vetTrevo[i]);
-            textoTrevo[i].setText(" 0" + vetTrevo[i] + " ");
+            textoTrevo[i].setText("  0" + vetTrevo[i] + "  ");
         }
         gravadoTrevo = true;
     }
@@ -146,7 +157,7 @@ public class MaisMilionariaActivity extends MainActivity {
         if (qntIntT < minTrevo || qntIntT > maxTrevo) {
             AlertDialog.Builder alertT = new AlertDialog.Builder(this);
             alertT.setTitle("ERRO!");
-            alertT.setMessage("Para Trevos, informe um valor entre " + minTrevo + " e " + maxTrevo);
+            alertT.setMessage("Para trevos, informe um valor entre " + minTrevo + " e " + maxTrevo);
             alertT.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {

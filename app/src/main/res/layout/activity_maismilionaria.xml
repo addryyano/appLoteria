@@ -317,7 +317,7 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/botao__customizadotrevo"
             android:textColor="@android:color/background_light"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/txtTrevo2"
             app:layout_constraintHorizontal_bias="0.5"

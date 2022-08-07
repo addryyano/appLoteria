@@ -30,6 +30,10 @@ public class LotofacilActivity extends MainActivity {
 
     public void lotofacil(View view) {
         String qntString = qntText.getText().toString();
+        if (qntText.getText().toString().equals("")) {
+            emBranco(view);
+            return;
+        }
 
         Integer qntInt = Integer.parseInt(qntString);
         int minAposta = 15;

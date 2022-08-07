@@ -34,6 +34,10 @@ import java.util.Random;
 
     public void diadeSorte(View view) {
         String qntString = qntText.getText().toString();
+        if (qntText.getText().toString().equals("")) {
+            emBranco(view);
+            return;
+        }
 
         Integer qntInt = Integer.parseInt(qntString);
         int minAposta = 7;

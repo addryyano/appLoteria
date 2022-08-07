@@ -241,4 +241,19 @@ public class MainActivity extends AppCompatActivity {
             alert.show();
         }
     }
+
+    public void emBranco(View view) {
+
+        AlertDialog.Builder alertEmBranco = new AlertDialog.Builder(this);
+        alertEmBranco.setTitle("ERRO!");
+        alertEmBranco.setMessage("O campo 'Quantidade' deve ser preenchido!' ");
+        alertEmBranco.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        alertEmBranco.create();
+        alertEmBranco.show();
+    }
 }
